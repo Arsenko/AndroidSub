@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Подписка</string>
+    <string name="userName">Имя пользователя</string>
+    <string name="userMail">Email</string>
+    <string name="ok">ok</string>
+    <string name="clear">Очистить</string>
+    <string name="defaultUserName">Елена</string>
+    <string name="defaultEmail">Eleba@ggl.com</string>
+</resources>
