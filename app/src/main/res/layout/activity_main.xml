@@ -45,8 +45,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_bright"
             android:ems="10"
+            android:hint="@string/defaultUserName"
             android:importantForAutofill="no"
-            android:inputType="textPersonName"
+            android:inputType="text"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:text="@string/defaultUserName"
@@ -66,6 +67,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_blue_bright"
             android:ems="10"
+            android:hint="@string/defaultEmail"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:padding="2dp"
@@ -87,14 +89,14 @@
             android:id="@+id/buttonClear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="15dp"
             android:background="@drawable/rounded"
             android:text="@string/clear"
             android:textSize="30sp" />
 
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/outView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp" />
