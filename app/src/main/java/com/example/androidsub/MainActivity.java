@@ -17,14 +17,16 @@ public class MainActivity extends AppCompatActivity {
         init();
     }
     public void init(){
-        Button buttonOk=findViewById(R.id.buttonOk);
+        final TextView userName=findViewById(R.id.userName);
+        final TextView userMail=findViewById(R.id.userMail);
+        final TextView outView=findViewById(R.id.outView);
+        final Button buttonOk=findViewById(R.id.buttonOk);
+
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView userName=findViewById(R.id.userName);
-                TextView userMail=findViewById(R.id.userMail);
-                TextView outView=findViewById(R.id.outView);
-                outView.setText("Подписка на рассылку успешно оформлена для пользователя "+userName.getText()+" на электронный адрес "+userMail.getText());
+                outView.setText("Подписка на рассылку успешно оформлена для пользователя "+
+                        userName.getText()+" на электронный адрес "+userMail.getText());
             }
         });
 
@@ -32,9 +34,6 @@ public class MainActivity extends AppCompatActivity {
         buttonClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TextView userName=findViewById(R.id.userName);
-                TextView userMail=findViewById(R.id.userMail);
-                TextView outView=findViewById(R.id.outView);
                 userName.setText("");
                 userMail.setText("");
                 outView.setText("");
